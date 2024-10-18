@@ -12,4 +12,4 @@ FROM gcr.io/distroless/static:nonroot
 
 COPY --from=builder /usr/src/app/waiter /waiter
 
-CMD ["/waiter"]
+ENTRYPOINT ["/waiter"]
